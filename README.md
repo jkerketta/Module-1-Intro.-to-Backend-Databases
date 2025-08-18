@@ -1,1 +1,1 @@
-wow i love qtma <3
+i love qtma sm <3
