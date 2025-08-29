@@ -6,6 +6,8 @@ import cors from "cors";
 import "dotenv/config";
 
 const app = express();
+const express = require("express");
+const cors = require("cors");
 
 app.use(express.json());
 app.use(cors());

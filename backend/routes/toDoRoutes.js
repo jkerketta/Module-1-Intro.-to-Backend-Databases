@@ -63,18 +63,27 @@ router.delete("/:id", async (request, result) => {
 router.put("/:id", async (request, result) => {
   try {
     const { id } = request.params;
-    const todo = await toDo.findByIdAndUpdate(id, { title: request.body.title }, { new: true });
-    if (!todo) {
-      return result.status(404).json({ message: "ToDo not found" });
+
+    if (!request.body.title) {
+      return response
+        .status(400)
+        .json({ message: "You need to include request field: title" });
     }
-    return result.status(200).send({
-      message: "Successfully updated ToDo",
-    });
+
+    const updatedToDo = await toDo.findByIdAndUpdate(
+      id,
+      { title: request.body.title },
+      { new: true }
+    );
+
+    if (!updatedToDo) {
+      return response.status(404).json({ message: "todo not found" });
+    }
+
+    return response.status(200).json(updatedToDo);
   } catch (error) {
     console.log(error.message);
-    result.status(500).send({
-      message: error.message,
-    });
+    return response.status(500).send({ message: error.message });
   }
 });
 
