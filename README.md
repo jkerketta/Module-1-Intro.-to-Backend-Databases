@@ -32,10 +32,11 @@ npm install
 npm start
 ```
 
----
 
 4. **Open in browser**
-Go to [http://localhost:3000](http://localhost:3000)
+Go to your local host
+
+---
 
 ## Technologies Used  
 - **React** – JavaScript library for building UIs  
