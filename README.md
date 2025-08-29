@@ -1,12 +1,6 @@
 # Todo List App
 
-A simple and effective **Todo List App** built using **React**, **JavaScript**, and **CSS**.
-
----
-
-## Introduction  
-As a member of the Uni Club, I built this Todo List App as part of my training to learn and practice web development skills.  
-This app allows users to **create, edit, and delete todo items**, making it a great tool for managing tasks and increasing productivity.
+A simple To-Do List app built using the **MERN** stack.
 
 ---
 
@@ -18,61 +12,42 @@ This app allows users to **create, edit, and delete todo items**, making it a gr
 
 ---
 
-## How to Use  
+## How to Use
 
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/your-username/todo-list-app.git
-   ```
 
-2. **Install dependencies**  
-   ```bash
-   npm install
-   ```
-
-3. **Start the app**  
-   ```bash
-   npm start
-   ```
-
-4. **Open in browser**  
-   Go to [http://localhost:3000](http://localhost:3000)  
-
-5. Start creating, editing, and deleting todo items!  
-
----
-
-## Code Structure  
-
+1. **Clone the repository**
+```bash
+git clone https://github.com/your-username/todo-list-app.git
 ```
-todo-list-app/
-│-- src/
-│   │-- index.js        # Main entry point
-│   │-- App.js          # Main app component
-│   │-- ToDoItem.js     # Component for a single todo item
-│   │-- ToDoList.js     # Component for the list of todo items
-│   │-- styles.css      # App styles
-│-- package.json
-│-- README.md
+
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+
+3. **Start the app**
+```bash
+npm start
 ```
 
 ---
+
+4. **Open in browser**
+Go to [http://localhost:3000](http://localhost:3000)
 
 ## Technologies Used  
 - **React** – JavaScript library for building UIs  
 - **JavaScript** – Programming language for interactivity  
 - **CSS** – Stylesheet language for styling the app  
+- **MongoDB** – NoSQL database for storing todo items  
+- **Mongoose** – Data Modeling library for MongoDB to model application data  
 
 ---
 
-## Future Development  
-Planned improvements include:  
+## Future Plans    
 - Adding user authentication and authorization  
 - Implementing a backend API to store todo items  
-- Adding due dates, reminders, and other advanced features  
-
----
-
-## Conclusion  
-I hope you find this Todo List App useful and enjoyable!  
-If you have any questions or feedback, feel free to reach out.
+- Adding due dates, reminders, and other advanced features
+- Deploy it!  
